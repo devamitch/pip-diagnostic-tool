@@ -1,0 +1,206 @@
+.container {
+  padding: 6px;
+}
+
+.metricsLayout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.leftMetrics, .rightMetrics {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.centerReport {
+  flex: 1;
+  max-width: 500px;
+  height: 100%;
+}
+
+.metricCard {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  background: rgba(241, 241, 235, 1);
+  color: rgba(72, 89, 83, 1);
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-left: 0.8rem;
+  padding-top: 0.5rem;
+  justify-content: center;
+}
+
+
+.metricHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+
+.metricLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(72, 89, 83, 1);
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.metricValue {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(72, 89, 83, 1);
+  text-align: start;
+  transition: color 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.recommendedValue {
+  font-size: 11px;
+  color: rgba(146, 162, 156, 1);
+  font-weight: 400;
+}
+
+.metricValue[data-status="low"] {
+  color: #6BA292;
+}
+
+.metricValue[data-status="moderate"] {
+  color: #D6A85B;
+}
+
+.metricValue[data-status="high"] {
+  color: #C2665A;
+}
+
+.metricValue[data-status="very-high"] {
+  color: #A74444;
+}
+
+.newData {
+  animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { 
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  50% { 
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.15);
+  }
+  100% { 
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media (max-width: 1024px) {
+  .metricsLayout {
+    gap: 20px;
+  }
+  
+  .centerReport {
+    flex: 1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .metricsLayout {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .leftMetrics, .rightMetrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  
+  .centerReport {
+    order: -1; 
+  }
+  
+  .metricCard {
+    padding: 16px;
+  }
+  
+  .metricCard {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .metricValue {
+    font-size: 18px;
+  }
+  
+  .metricLabel {
+    font-size: 11px;
+  }
+
+  .recommendedValue {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftMetrics, .rightMetrics {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .metricCard {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .cardIcon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .metricValue {
+    font-size: 16px;
+  }
+
+  .metricLabel {
+    font-size: 10px;
+  }
+
+  .recommendedValue {
+    font-size: 9px;
+  }
+}

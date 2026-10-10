@@ -1,0 +1,70 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  background: rgba(241, 241, 235, 1);
+}
+.logoImage {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(72, 89, 83, 1);
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.8rem;
+  color: rgba(146, 162, 156, 1);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navItem[data-active="true"] {
+  display: flex;
+  width: 100%;
+  padding: 11px 20px 11px 21px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background: rgba(148, 171, 150, 1);
+  color: white;
+}
+
+
+.navText {
+  font-size: 16px;
+  font-weight: 500;
+}

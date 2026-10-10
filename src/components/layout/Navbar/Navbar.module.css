@@ -1,0 +1,87 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 22px;
+}
+.header {
+	font-weight: 700;
+	font-size: 28px;
+	margin-left: 1.7rem;
+	line-height: 17px;
+    color: rgba(72, 89, 83, 1);
+	letter-spacing: 0;
+}
+.navItems {
+	display: flex;
+	gap: 4px;
+}
+.searchButton {
+	display: flex;
+	padding: 11px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	margin: 5px;
+	background: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+.searchInput {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	outline: none;
+	margin-left: 10px;
+}
+.searchInput::placeholder {
+	color: rgba(146, 162, 156, 1);
+}
+
+.iconButton {
+	display: flex;
+	padding: 11px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	margin: 5px;
+	background:rgba(255, 255, 255, 1);
+
+	border: none;
+	cursor: pointer;
+}
+
+.userSection {
+	display: flex;
+	width: fit-content;
+	padding: 4px 20px 4px 4px;
+	margin: 1px 0px;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+	border-radius: 24px;
+	background: rgba(255, 255, 255, 1);
+
+	color: rgba(72, 89, 83, 1);
+}
+
+.avatar {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.userName {
+	font-weight: 600;
+	font-size: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.userEmail{
+	
+	font-weight: 400;
+	font-size: 12px;
+	color: rgba(146, 162, 156, 1);
+}

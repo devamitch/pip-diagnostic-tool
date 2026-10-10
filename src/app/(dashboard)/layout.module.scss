@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  background: linear-gradient(180deg, 
+    rgba(240, 239, 233, 1) 65%,
+    rgba(241, 241, 235, 1) 100%
+  );
+  position: relative;
+  height: 100vh;
+  flex: 1;
+  color: #485953; // Added text color for consistency
+
+  // Sidebar specific styles if needed
+  .sidebar {
+    background: #f8faf7;
+    border-right: 1px solid #e8ebe9;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; // Prevent content overflow
+}
+
+.main {
+  flex: 1;
+  padding: 2.5rem;
+  color: #485953; // Consistent text color
+  position: relative;
+  overflow: auto;
+  background: transparent;
+
+  // Card-like elements within main
+  .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid #e8ebe9;
+    box-shadow: 0 2px 10px rgba(72, 89, 83, 0.08);
+  }
+}
+
+// Navigation styles
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e8ebe9;
+  backdrop-filter: blur(8px);
+}
+
+// Footer styles
+.footer {
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #e8ebe9;
+  color: #64748b;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 1rem;
+  }
+}

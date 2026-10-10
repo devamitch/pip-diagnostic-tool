@@ -1,0 +1,278 @@
+.reportHistory {
+	border-radius: 32px;
+	padding-top: 18px;
+	margin-bottom: 24px;
+}
+
+.reportHistory h2 {
+	font-size: 24px;
+	font-weight: 500;
+	color: #485953;
+	margin-bottom: 20px;
+}
+
+.tableContainer {
+	background: white;
+	border-radius: 12px;
+	max-height: 500px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.tableContainer::-webkit-scrollbar {
+	width: 4px;
+	background: #f1f1eb;
+}
+.tableContainer::-webkit-scrollbar-thumb {
+	background: #80b08dff;
+	border-radius: 8px;
+	height: 8px;
+}
+.tableContainer::-webkit-scrollbar-thumb:hover {
+	background: #5b7a5aff;
+}
+
+.tableHeader {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	padding: 20px 24px;
+	font-weight: 600;
+	font-size: 14px;
+	background: white;
+	color: #374151;
+	border-bottom: 1px solid rgba(241, 241, 235, 1);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.tableRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	padding: 20px 24px;
+	align-items: center;
+	transition: background-color 0.2s;
+	border-bottom: 1px solid rgba(241, 241, 235, 1);
+}
+
+.tableRow:last-child {
+	border-bottom: none;
+}
+
+.dateColumn p {
+	margin: 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.dateColumn .time {
+	color: #666;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.resultColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.status {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	width: fit-content;
+}
+.status.normal {
+	background: #6BA292;
+	color: white;
+}
+
+.status.blinkrate {
+	background: #D6A85B;
+	color: white;
+}
+
+.status.eyestrain {
+	background: #C2665A;
+	color: white;
+}
+
+.statusType {
+	font-size: 12px;
+    margin-top: 2px;
+	color: #333;
+}
+
+.actionButton {
+	padding: 10px 24px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(72, 89, 83, 1);
+	cursor: pointer;
+	transition: all 0.2s;
+	background: rgba(241, 241, 235, 1);
+	border: none;
+	width: fit-content;
+	justify-self: start;
+}
+
+
+.emptyState {
+	text-align: center;
+	padding: 48px 24px;
+	color: #666;
+}
+
+.emptyState svg {
+	margin-bottom: 16px;
+	color: #ccc;
+}
+
+.emptyState p {
+	margin: 8px 0;
+	font-size: 14px;
+}
+
+.emptyState p:first-of-type {
+	font-weight: 500;
+	color: #333;
+}
+
+.headerContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.controlsContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	gap: 1rem;
+}
+
+.viewButtons {
+	display: flex;
+	gap: 8px;
+	background: rgba(241, 241, 235, 1);
+	padding: 4px;
+	border-radius: 10px;
+}
+
+.viewButton {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	background: transparent;
+	color: rgba(72, 89, 83, 1);
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.viewButton.active {
+	background: rgba(72, 89, 83, 1);
+	color: white;
+}
+
+.chartContainer {
+	background: white;
+	border-radius: 12px;
+	margin-bottom: 24px;
+}
+
+.container{
+		padding: 20px;
+	border-radius: 12px;
+	background: white;
+}
+
+.chartContainer h3 {
+	font-size: 18px;
+	font-weight: 500;
+	color: #485953;
+	margin-bottom: 16px;
+}
+
+.filterBadges {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+}
+
+.filterBadge {
+	padding: 6px 14px;
+	border-radius: 16px;
+	font-size: 12px;
+	font-weight: 500;
+	background: rgba(241, 241, 235, 1);
+	color: rgba(72, 89, 83, 1);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+
+
+.filterBadge.active {
+	background: rgba(72, 89, 83, 1);
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.headerContainer {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.controlsContainer {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 16px;
+	}
+
+	.filterBadges {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	
+	.viewButtons {
+		align-self: center;
+	}
+
+	.viewButton {
+		font-size: 12px;
+		padding: 6px 10px;
+		gap: 4px;
+	}
+
+	.tableHeader,
+	.tableRow {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+
+	.tableHeader span:last-child,
+	.tableRow > div:last-child {
+		justify-self: start;
+	}
+
+	.chartContainer {
+		padding: 16px;
+	}
+}

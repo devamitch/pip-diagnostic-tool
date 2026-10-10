@@ -1,0 +1,54 @@
+.header {
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	width: 100%;
+}
+
+.logoText {
+	font-size: 1.75rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	color: rgba(72, 89, 83, 1);
+}
+
+.navLinks {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.startButton {
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: rgba(148, 171, 150, 1);
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.startButton:hover {
+	background-color: rgba(148, 171, 150, 0.8);
+	color: white;
+}
+
+.signInButton {
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: white;
+	color: rgba(72, 89, 83, 1);
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.signInButton:hover {
+	background-color: rgba(72, 89, 83, 0.1);
+	color: rgba(72, 89, 83, 1);
+}

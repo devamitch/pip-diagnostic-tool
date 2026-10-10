@@ -1,0 +1,83 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	border: none;
+	cursor: pointer;
+	border-radius: 15px;
+	padding: 12px 18px;
+	font-weight: 600;
+	font-size: 14px;
+	transition:
+		background 0.2s ease,
+		color 0.2s ease,
+		border-color 0.2s ease,
+		opacity 0.2s ease;
+	color: rgba(72, 89, 83, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+.icon {
+	display: inline-flex;
+}
+
+.primary {
+	background: rgba(148, 171, 150, 1);
+	color: white;
+}
+
+.secondary {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(72, 89, 83, 1);
+}
+
+.outline {
+	background: transparent;
+	border: 1px solid rgba(146, 162, 156, 0.6);
+	color: rgba(72, 89, 83, 1);
+}
+
+.ghost {
+	background: transparent;
+	color: rgba(72, 89, 83, 1);
+}
+
+.link {
+	background: transparent;
+	color: rgba(72, 89, 83, 1);
+	text-decoration: underline;
+	padding: 0;
+	border-radius: 0;
+}
+
+.danger {
+	background: #ef4444;
+	color: #fff;
+}
+
+.sm {
+	padding: 8px 14px;
+	font-size: 13px;
+	border-radius: 12px;
+}
+
+.md {
+	padding: 12px 18px;
+	font-size: 14px;
+}
+
+.lg {
+	padding: 16px 24px;
+	font-size: 16px;
+	border-radius: 18px;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}

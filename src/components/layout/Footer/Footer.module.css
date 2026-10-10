@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px 15px;
+  position: relative;
+
+}
+
+.section {
+  display: flex;
+  gap: 1.5rem;
+  color: rgba(72, 89, 83, 1);
+  font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+}
+.copyright {
+  color: rgba(72, 89, 83, 1);
+  font-size: 14px;
+    text-align: right;
+    font-weight: 500;
+
+}
+ 
+
+

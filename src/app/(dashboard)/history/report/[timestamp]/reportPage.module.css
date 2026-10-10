@@ -1,0 +1,169 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 24px;
+	min-height: 100vh;
+}
+
+.header {
+	margin-bottom: 32px;
+}
+
+.backButton {
+	display: inline-flex;
+	align-items: center;
+	color: #7baf7b;
+	text-decoration: none;
+	margin-bottom: 16px;
+	font-weight: 500;
+}
+
+.backButton:hover {
+	text-decoration: underline;
+}
+
+.reportHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+}
+
+.reportHeader h1 {
+	font-size: 28px;
+	font-weight: 500;
+	color: #485953;
+	margin: 0;
+}
+
+.reportHeader p {
+	color: #699b75ff;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.reportContent {
+	background: #fff;
+	border-radius: 12px;
+	padding: 24px;
+}
+
+.statusSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.statusSection div {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.statusSection h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+	margin: 0;
+}
+
+.exportButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	background: #7baf7b;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.exportButton:hover {
+	background: #6a9c6a;
+}
+
+.statusSection {
+	margin-bottom: 32px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.status {
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: white;
+}
+
+.status.normal {
+	background: #7baf7b;
+}
+
+.status.blinkrate {
+	background: #ffb74d;
+}
+
+.status.eyestrain {
+	background: #f44336;
+}
+
+.detailsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 16px;
+}
+
+.detailCard {
+	background: #f8f9fa;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.detailCard h3 {
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 8px 0;
+	font-weight: 500;
+}
+
+.detailCard .value {
+	font-size: 24px;
+	font-weight: 600;
+	color: #485953;
+	margin: 0 0 4px 0;
+}
+
+.detailCard .label {
+	font-size: 12px;
+	color: #92a29c;
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 16px;
+	}
+
+	.titleRow {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	.statusRow {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.detailsGrid {
+		grid-template-columns: 1fr;
+	}
+}

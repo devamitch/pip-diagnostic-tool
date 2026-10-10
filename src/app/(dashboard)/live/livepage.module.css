@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10px;
+  color: hsl(var(--foreground));
+}
+
+.errorBanner {
+  background-color: hsl(var(--destructive) / 0.1);
+  color: hsl(var(--destructive));
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border-left: 4px solid hsl(var(--destructive));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.streamSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.retryButton {
+  padding: 0.5rem 1rem;
+  background-color: #485953;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.retryButton:hover {
+  background-color: #92A29C;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .mainSection {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+.leftMetrics, .rightMetrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .leftMetrics, .rightMetrics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.cameraSection {
+  position: relative;
+  order: -1;
+}
+
+@media (min-width: 1024px) {
+  .cameraSection {
+    order: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .leftMetrics, .rightMetrics {
+    grid-template-columns: 1fr;
+  }
+}

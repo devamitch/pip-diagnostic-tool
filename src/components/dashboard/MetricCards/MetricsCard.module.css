@@ -1,0 +1,82 @@
+.card {
+	height: 220px;
+	width: 100%;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.25rem;
+}
+
+.contentSection {
+	position: relative;
+	padding: 1.3rem;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: rgba(72, 89, 83, 1);
+}
+
+.name {
+	font-size: 0.875rem;
+	color: rgba(146, 162, 156, 1);
+	font-weight: 500;
+}
+.valueContainer {
+	display: flex;
+	gap: 0.5rem;
+	align-items: baseline;
+}
+
+.value {
+	font-size: 1.875rem;
+	font-weight: 700;
+	color: rgba(10, 9, 8, 1);
+}
+
+.unit {
+	font-size: 1rem;
+	color: rgba(146, 162, 156, 1);
+}
+
+.chartSection {
+	position: relative;
+	width: 100%;
+	height: 5rem;
+	padding: 0.25rem 0.25rem;
+	opacity: 0.9;
+}
+
+.tooltip {
+	background: white;
+	border: 1px solid rgba(72, 89, 83, 0.12);
+	border-radius: 6px;
+	padding: 4px;
+	box-shadow: 0 8px 24px rgba(72, 89, 83, 0.08);
+}
+
+.tooltipLabel {
+	margin: 0;
+	font-weight: 600;
+	color: rgba(72, 89, 83, 1);
+	font-size: 12px;
+}
+
+.tooltipTime {
+	margin: 0;
+	color: rgba(196, 206, 202, 1);
+	font-size: 10px;
+	margin-top: 2px;
+}
+
+.status {
+	margin: 0;
+	color: black !important;
+	font-size: 10px;
+	margin-top: 2px;
+}

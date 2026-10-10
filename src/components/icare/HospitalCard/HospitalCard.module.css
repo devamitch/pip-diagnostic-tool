@@ -1,0 +1,55 @@
+.card {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	border-radius: 20px;
+ backdrop-filter: blur(36px);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.12) 100%, rgba(255, 255, 255, 0.05) 100%);
+
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	padding: 7px;
+	border-radius: 1rem;
+	object-fit: cover;
+	position: absolute;
+	inset: 0;
+}
+
+.content {
+	position: relative;
+	height: 100%;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 20px;	
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	backdrop-filter: blur(2px);
+	width: 100%;
+	padding: 2px;
+	background: linear-gradient(0deg, rgba(102, 102, 102, 0) 100%, rgba(0, 0, 0, 1) 100%);
+}
+
+.description{
+font-size: 12px;
+	font-weight: 400;
+	color: white;
+	backdrop-filter: blur(2px);
+	width: 100%;
+	padding-bottom: 2px;
+	background: linear-gradient(0deg, rgba(102, 102, 102, 0) 100%, rgba(0, 0, 0, 1) 100%);
+}
+
+@media (min-width: 1024px) {
+	.card {
+		flex: 1 1 calc(25% - 1rem);
+	}
+}

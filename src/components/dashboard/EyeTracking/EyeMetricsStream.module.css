@@ -1,0 +1,175 @@
+/* EyeMetricsStream.module.css */
+.container {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.liveIndicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #dc2626;
+  background: #fef2f2;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  background: #dc2626;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.streamContainer {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  margin-bottom: 16px;
+}
+
+.streamRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.streamRow:last-child {
+  border-bottom: none;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.metricGroup {
+  display: flex;
+  gap: 16px;
+}
+
+.metricValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.metricLabel {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Status colors */
+.low { color: #16a34a; }
+.moderate { color: #d97706; }
+.high { color: #dc2626; }
+.veryHigh { color: #7f1d1d; }
+.normal { color: #3b82f6; }
+.good { color: #16a34a; }
+.poor { color: #dc2626; }
+
+.placeholder {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.currentMetrics {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.currentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.currentTimestamp {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.currentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.currentMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.currentLabel {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.currentValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .metricGroup {
+    gap: 12px;
+  }
+  
+  .currentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .streamRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
